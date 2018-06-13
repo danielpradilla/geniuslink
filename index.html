@@ -1,0 +1,64 @@
+<html>
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+	<script src="js/main.js"></script>
+
+	<title>geni.us/links</title>
+</head>
+<body onload="gl.onload()">
+
+<div class="container">	
+	<h1>geni.us/links</h1>
+
+	<form id="link_form" class="" onsubmit="gl.submitPost(event)">
+		<div class="row">
+			<div class="col-md-8">
+				  <input type="text" class="form-control mb-2 mr-sm-2" id="url" name="url" placeholder="Link">
+			</div>
+			<div class="col-md-4">
+				  <button type="submit" class="btn btn-primary mb-2">Obtener código</button>
+			</div>
+		</div>
+	</form>
+
+	<div class="input-group mb-3">
+	  <input type="text" class="form-control" id="search" placeholder="Buscar">
+	  <div class="input-group-append">
+	    <span class="input-group-text bg-white"><i class="fas fa-search"></i></span>
+	  </div>
+	</div>
+
+
+	<div class="table-responsive-sm">
+		<table class="table table-sm" id="links_table">
+		  <thead class="thead-dark">
+		    <tr>
+		      <th scope="col"> </th>
+		      <th scope="col">Producto</th>
+		      <th scope="col">Link</th>
+		      <th scope="col">Creado</th>
+		    </tr>
+		  </thead>
+		  <tbody>
+		  </tbody>
+		</table>
+	</div>
+
+
+
+</div>
+
+</body>
+</html>

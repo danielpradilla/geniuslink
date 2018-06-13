@@ -1,0 +1,7 @@
+.loading {
+  opacity: 0.6;
+  transition: 0.5s linear all;
+}
+tbody {
+    font-size: 0.6rem;
+}
